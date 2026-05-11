@@ -1,0 +1,169 @@
+/* =========================================
+   HERO SECTION
+========================================= */
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    max-width: 900px;
+    z-index: 2;
+}
+
+.hero-content h1{
+    font-size: 92px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    margin-bottom: 24px;
+    line-height: 1;
+}
+
+.hero-content p{
+    font-size: 18px;
+    max-width: 720px;
+    margin: auto;
+    margin-bottom: 40px;
+    color: rgba(255,255,255,0.9);
+}
+
+
+/* =========================================
+   INTRO SECTION
+========================================= */
+.intro-section{
+    padding: 120px 0;
+    background: #f8f6f2;
+}
+
+.intro-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.intro-image{
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.intro-image img{
+    height: 650px;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.intro-image:hover img{
+    transform: scale(1.05);
+}
+
+.intro-content h2{
+    font-size: 58px;
+    line-height: 1.1;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.intro-content p{
+    margin-bottom: 22px;
+    color: #555;
+    font-size: 16px;
+}
+
+
+/* =========================================
+   LIVING SECTION
+========================================= */
+.living-section{
+    padding: 120px 0;
+    background: #fff;
+}
+
+.living-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.living-card{
+    background: #fff;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.living-card:hover{
+    transform: translateY(-8px);
+}
+
+.living-image{
+    overflow: hidden;
+}
+
+.living-image img{
+    height: 520px;
+    object-fit: cover;
+    transition: 0.6s ease;
+}
+
+.living-card:hover .living-image img{
+    transform: scale(1.05);
+}
+
+.living-content{
+    padding: 35px 10px 10px;
+}
+
+.living-content h3{
+    font-size: 42px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.living-content p{
+    color: #666;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   QUOTE SECTION
+========================================= */
+.quote-section{
+    padding: 140px 0;
+    background: #e8e1d6;
+    text-align: center;
+}
+
+.quote-section h2{
+    font-size: 58px;
+    line-height: 1.3;
+    max-width: 950px;
+    margin: auto;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    color: #2d2d2d;
+}
