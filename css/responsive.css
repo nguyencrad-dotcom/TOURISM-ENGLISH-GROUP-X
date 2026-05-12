@@ -166,3 +166,63 @@
     }
 
 }
+@media(max-width: 1024px){
+
+    .resort-card{
+        min-width: calc(50% - 20px);
+    }
+
+}
+
+
+@media(max-width: 768px){
+
+    .resort-card{
+        min-width: 100%;
+    }
+
+    .slider-btn{
+        display: none;
+    }
+
+}
+@media(max-width: 1024px){
+
+    .living-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width: 768px){
+
+    .living-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .living-heading h2{
+        font-size: 36px;
+    }
+
+}
+@media(max-width: 1024px){
+
+    .team-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width: 768px){
+
+    .team-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-hero-content h1{
+        font-size: 42px;
+    }
+
+}

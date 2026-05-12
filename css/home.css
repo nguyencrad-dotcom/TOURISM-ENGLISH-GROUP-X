@@ -76,7 +76,7 @@
 }
 
 .intro-image:hover img{
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .intro-content h2{
@@ -166,4 +166,350 @@
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
     color: #2d2d2d;
+}
+/* =========================================
+   RESORT SLIDER
+========================================= */
+
+.resort-slider-section{
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+.section-heading{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-heading h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.section-heading p{
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.7;
+}
+
+
+.resort-slider-wrapper{
+    position: relative;
+}
+
+.resort-slider{
+    display: flex;
+    gap: 30px;
+
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+}
+
+.resort-slider::-webkit-scrollbar{
+    display: none;
+}
+
+
+.resort-card{
+       min-width: calc(28% - 20px);
+
+    max-width: 360px;
+
+    background: #fff;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow:
+    0 4px 14px rgba(0,0,0,0.05);
+
+    flex-shrink: 0;
+}
+
+.resort-card img{
+    height: 260px;
+    object-fit: cover;
+}
+
+.resort-content{
+    padding: 28px;
+}
+
+.resort-content h3{
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.stars{
+    color: #d4af37;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.resort-content p{
+    opacity: 0.75;
+}
+
+
+/* BUTTON */
+
+.slider-btn{
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 54px;
+    height: 54px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    box-shadow:
+        0 4px 20px rgba(0,0,0,0.08);
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    font-size: 28px;
+}
+
+.prev-btn{
+    left: -20px;
+}
+
+.next-btn{
+    right: -20px;
+}
+.book-btn{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 24px;
+
+    padding: 14px 28px;
+
+    border-radius: 40px;
+
+    background: transparent;
+
+    border: 1px solid #111;
+
+    color: #111;
+
+    font-size: 14px;
+
+    transition: 0.35s ease;
+
+}
+
+.book-btn:hover{
+
+    background: #111;
+
+    color: #fff;
+
+    transform: translateY(-3px);
+
+}
+.resort-slider{
+
+    will-change: transform;
+
+    scroll-behavior: smooth;
+
+    -webkit-overflow-scrolling: touch;
+
+}
+
+
+.resort-card{
+
+    will-change: transform;
+
+    transform: translateZ(0);
+
+}
+
+
+.resort-card img{
+
+    transform: translateZ(0);
+
+    backface-visibility: hidden;
+
+}
+/* =========================================
+   LIVING SECTION
+========================================= */
+
+.living-section{
+    padding: 120px 0;
+    background: #f8f8f8;
+}
+
+
+/* HEADING */
+
+.living-heading{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.living-heading h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.living-heading p{
+    max-width: 760px;
+    margin: auto;
+    opacity: 0.72;
+    line-height: 1.8;
+}
+
+
+/* GRID */
+
+.living-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 32px;
+
+}
+
+
+/* CARD */
+
+.living-card{
+
+    background: #fff;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition: 0.35s ease;
+
+    box-shadow:
+        0 4px 14px rgba(0,0,0,0.05);
+
+}
+
+.living-card:hover{
+
+    transform: translateY(-6px);
+
+}
+
+
+/* IMAGE */
+
+.living-image{
+    overflow: hidden;
+}
+
+.living-image img{
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+
+}
+
+.living-card:hover img{
+    transform: scale(1.03);
+}
+
+
+/* CONTENT */
+
+.living-content{
+
+    padding:
+        20px
+        22px
+        24px;
+
+    text-align: left;
+
+}
+
+.living-content h3{
+
+    font-size: 28px;
+
+    margin-bottom: 14px;
+
+}
+
+.living-stars{
+
+    color: #d4af37;
+
+    margin-bottom: 18px;
+
+    font-size: 18px;
+
+}
+
+.living-content p{
+
+    opacity: 0.72;
+
+    line-height: 1.7;
+
+    margin-bottom: 24px;
+
+}
+
+
+/* BUTTON */
+
+.living-btn{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 14px 28px;
+
+    border-radius: 40px;
+
+    background: #111;
+
+    color: #fff;
+
+    transition: 0.3s ease;
+
+}
+
+.living-btn:hover{
+
+    opacity: 0.9;
+
+    transform: translateY(-3px);
+
 }

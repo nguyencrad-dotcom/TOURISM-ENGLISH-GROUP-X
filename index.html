@@ -21,35 +21,78 @@
     <!-- ========================= -->
     <header class="header">
 
-        <div class="container nav-container">
+    <div class="container nav-container">
 
-            <!-- LOGO -->
-            <div class="logo">
-                <a href="index.html">GROUP X</a>
+        <!-- WEATHER -->
+        <div class="weather-widget" id="weatherWidget">
+
+            <div class="weather-icon" id="weatherIcon">
+                ☀️
             </div>
 
-            <!-- NAVIGATION -->
-            <nav class="navbar">
+            <div class="weather-info">
 
-                <ul class="nav-links">
-                    <li><a href="index.html">Trang Chủ</a></li>
-                    <li><a href="he-vuon.html">Hệ Vườn</a></li>
-                    <li><a href="he-rung.html">Hệ Rừng</a></li>
-                    <li><a href="#">Liên Hệ</a></li>
-                </ul>
+                <div class="weather-location">
+                    Khánh Hòa
+                </div>
 
-            </nav>
+                <div class="weather-meta">
 
-            <!-- MOBILE MENU BUTTON -->
-            <div class="menu-toggle" id="menuToggle">
-                ☰
+                    <span id="weatherTemp">
+                        32°
+                    </span>
+
+                    <span id="weatherStatus">
+                        Loading
+                    </span>
+
+                </div>
+
             </div>
 
         </div>
 
-    </header>
+
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="index.html">GROUP X</a>
+        </div>
 
 
+        <!-- NAVIGATION -->
+        <nav class="navbar">
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="he-vuon.html">Natural</a>
+                </li>
+
+                <li>
+                    <a href="he-rung.html">Cultural</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- MOBILE MENU -->
+        <div class="menu-toggle" id="menuToggle">
+            ☰
+        </div>
+
+    </div>
+
+</header>
     <!-- ========================= -->
     <!-- HERO SECTION -->
     <!-- ========================= -->
@@ -85,159 +128,371 @@
 
     </section>
 
+    <!-- =========================================
+     RESORT SLIDER
+    <!========================================= -->
 
-    <!-- ========================= -->
-    <!-- INTRO SECTION -->
-    <!-- ========================= -->
-    <section class="intro-section">
+<section class="resort-slider-section">
 
-        <div class="container intro-grid">
+    <div class="container">
 
-            <!-- LEFT -->
-            <div class="intro-image">
+        <div class="section-heading">
 
-                <!-- REPLACE IMAGE -->
-                <img 
-                    src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1974&auto=format&fit=crop" 
-                    alt=""
-                >
+            <h2>
+                Featured Retreats
+            </h2>
 
-            </div>
-
-            <!-- RIGHT -->
-            <div class="intro-content">
-
-                <span class="section-subtitle">
-                    U Lesa Retreat
-                </span>
-
-                <h2>
-                    Một nơi để trở về với sự bình yên
-                </h2>
-
-                <p>
-                    <!-- REPLACE CONTENT -->
-                    Tạm rời xa nhịp sống vội vã, U Lesa mang đến trải nghiệm
-                    nghỉ dưỡng giữa thiên nhiên với kiến trúc mộc mạc,
-                    không gian xanh và cảm giác thư giãn trọn vẹn.
-                </p>
-
-                <p>
-                    <!-- REPLACE CONTENT -->
-                    Những căn nhà gỗ ấm áp, khu vườn xanh mát và khoảng trời
-                    riêng tư sẽ là nơi lý tưởng cho những ngày nghỉ nhẹ nhàng.
-                </p>
-
-            </div>
+            <p>
+                Những điểm đến mang cảm hứng thiên nhiên,
+                nghỉ dưỡng và trải nghiệm văn hóa độc đáo.
+            </p>
 
         </div>
 
-    </section>
+
+        <!-- SLIDER -->
+
+        <div class="resort-slider-wrapper">
+
+            <button class="slider-btn prev-btn">
+                ‹
+            </button>
+
+
+            <div class="resort-slider" id="resortSlider">
+
+
+                <!-- CARD 1 -->
+
+                <div class="resort-card">
+
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+
+                    <div class="resort-content">
+
+                        <h3>
+                            U Lesa Forest
+                        </h3>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            Không gian nghỉ dưỡng giữa thiên nhiên
+                            và rừng xanh yên bình.
+                        </p>
+                            <a href="#" class="book-btn">
+                            Đặt phòng ngay
+                             </a>
+                    </div>
+
+                </div>
 
 
 
+                <!-- CARD 2 -->
+
+                <div class="resort-card">
+
+                    <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2">
+
+                    <div class="resort-content">
+
+                        <h3>
+                            Mountain Escape
+                        </h3>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            Kiến trúc tối giản kết hợp trải nghiệm
+                            nghỉ dưỡng sang trọng.
+                        </p>
+                            <a href="#" class="book-btn">
+                           Đặt phòng ngay
+                             </a>
+                    </div>
+
+                </div>
+
+
+
+                <!-- CARD 3 -->
+
+                <div class="resort-card">
+
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+                    <div class="resort-content">
+
+                        <h3>
+                            Ocean Retreat
+                        </h3>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            Không gian biển xanh thư giãn
+                            dành cho kỳ nghỉ riêng tư.
+                        </p>
+                            <a href="#" class="book-btn">
+                              Đặt phòng ngay
+                              </a>
+                    </div>
+
+                </div>
+
+
+
+                <!-- CARD 4 -->
+
+                <div class="resort-card">
+
+                    <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206">
+
+                    <div class="resort-content">
+
+                        <h3>
+                            Hidden Valley
+                        </h3>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            Thiết kế gần gũi thiên nhiên
+                            cùng trải nghiệm chữa lành.
+                        </p>
+                            <a href="#" class="book-btn">
+                             Đặt phòng ngay
+                             </a>
+                    </div>
+
+                </div>
+
+
+
+                <!-- CARD 5 -->
+
+                <div class="resort-card">
+
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267">
+
+                    <div class="resort-content">
+
+                        <h3>
+                            Sunset Villa
+                        </h3>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            Không gian sang trọng
+                            với view hoàng hôn tuyệt đẹp.
+                        </p>
+                            <a href="#" class="book-btn">
+                             Đặt phòng ngay
+                            </a>
+                    </div>
+
+                </div>
+
+
+
+                <!-- CARD 6 -->
+
+                <div class="resort-card">
+
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+
+                    <div class="resort-content">
+
+                        <h3>
+                            Nature Sanctuary
+                        </h3>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            Một hành trình nghỉ dưỡng
+                            hòa mình cùng thiên nhiên.
+                        </p>
+                        <a href="#" class="book-btn">
+                        Đặt phòng ngay
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button class="slider-btn next-btn">
+                ›
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
     <!-- ========================= -->
     <!-- LIVING SECTION -->
     <!-- ========================= -->
-   <section class="living-section" id="livingCards" style="scroll-margin-top: 120px;">
+   <!-- =========================================
+     LIVING SECTION
+========================================= -->
 
-        <div class="container">
+<section class="living-section">
 
-            <div class="section-heading" id="exploreSection">
+    <div class="container">
 
-                <span class="section-subtitle">
-                    Không Gian Lưu Trú
-                </span>
+        <div class="living-heading">
 
-                <h2>
-                    Chọn trải nghiệm dành cho bạn
-                </h2>
+            <h2>
+                DISCOVER DESTINATIONS
+            </h2>
 
-            </div>
-
-            <div class="living-grid">
-
-
-                <!-- ========================= -->
-                <!-- HỆ VƯỜN CARD -->
-                <!-- ========================= -->
-                <div class="living-card">
-
-                    <div class="living-image">
-
-                        <!-- REPLACE IMAGE -->
-                        <img 
-                            src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1974&auto=format&fit=crop" 
-                            alt=""
-                        >
-
-                    </div>
-
-                    <div class="living-content">
-
-                        <h3>
-                            Hệ Vườn
-                        </h3>
-
-                        <p>
-                            <!-- REPLACE CONTENT -->
-                            Không gian gần gũi thiên nhiên với khu vườn xanh,
-                            ánh nắng nhẹ và cảm giác thư giãn yên bình.
-                        </p>
-
-                        <a href="he-vuon.html" class="living-button">
-                            Xem Chi Tiết
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- ========================= -->
-                <!-- HỆ RỪNG CARD -->
-                <!-- ========================= -->
-                <div class="living-card">
-
-                    <div class="living-image">
-
-                        <!-- REPLACE IMAGE -->
-                        <img 
-                            src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1974&auto=format&fit=crop" 
-                            alt=""
-                        >
-
-                    </div>
-
-                    <div class="living-content">
-
-                        <h3>
-                            Hệ Rừng
-                        </h3>
-
-                        <p>
-                            <!-- REPLACE CONTENT -->
-                            Trải nghiệm nghỉ dưỡng giữa rừng thông,
-                            nơi thiên nhiên bao quanh và mọi thứ trở nên chậm lại.
-                        </p>
-
-                        <a href="he-rung.html" class="living-button">
-                            Xem Chi Tiết
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
+            <p>
+                Những điểm đến nghỉ dưỡng mang cảm hứng thiên nhiên,
+                chữa lành và trải nghiệm văn hóa độc đáo.
+            </p>
 
         </div>
 
-    </section>
+
+
+        <div class="living-grid">
+
+
+            <!-- CARD 1 -->
+
+            <div class="living-card">
+
+                <div class="living-image">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+                    loading="lazy"
+                    >
+
+                </div>
+
+                <div class="living-content">
+
+                    <h3>
+                        Forest Retreat
+                    </h3>
+
+                    <div class="living-stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Không gian nghỉ dưỡng giữa thiên nhiên,
+                        mang lại cảm giác yên bình và thư giãn.
+                    </p>
+
+                    <a href="he-rung.html" class="living-btn">
+                        Đặt phòng ngay
+                    </a>
+
+                </div>
+
+            </div>
 
 
 
+            <!-- CARD 2 -->
+
+            <div class="living-card">
+
+                <div class="living-image">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=900&q=80"
+                    loading="lazy"
+                    >
+
+                </div>
+
+                <div class="living-content">
+
+                    <h3>
+                        Mountain Escape
+                    </h3>
+
+                    <div class="living-stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Kiến trúc tối giản kết hợp trải nghiệm
+                        nghỉ dưỡng sang trọng giữa núi rừng.
+                    </p>
+
+                    <a href="he-vuon.html" class="living-btn">
+                        Đặt phòng ngay
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 3 -->
+
+            <div class="living-card">
+
+                <div class="living-image">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                    loading="lazy"
+                    >
+
+                </div>
+
+                <div class="living-content">
+
+                    <h3>
+                        Ocean Retreat
+                    </h3>
+
+                    <div class="living-stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Không gian nghỉ dưỡng gần biển
+                        dành cho kỳ nghỉ riêng tư và chữa lành.
+                    </p>
+
+                    <a href="#" class="living-btn">
+                        Đặt phòng ngay
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
     <!-- ========================= -->
     <!-- QUOTE SECTION -->
     <!-- ========================= -->
