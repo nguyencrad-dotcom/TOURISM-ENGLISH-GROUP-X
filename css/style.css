@@ -573,7 +573,19 @@ header.scrolled{
 
 .contact-hero-content h1{
 
-    font-size: 72px;
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size: 100px;
+
+    font-weight: 500;
+
+    line-height: 0.9;
+
+    letter-spacing: -2px;
+
+    color: #fff;
 
     margin-bottom: 24px;
 
